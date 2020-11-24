@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 const config = require('./config');
 
 module.exports = {
@@ -25,4 +23,3 @@ module.exports = {
     'gatsby-plugin-offline',
   ],
 };
->>>>>>> 4f0f66c395a91fdc1e0eb36237b0407991aae987
