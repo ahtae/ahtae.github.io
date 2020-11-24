@@ -1,13 +1,18 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
-
 import Scroll from '../components/Scroll';
-
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
+import profilePicture from '../assets/images/profilepic.jpg';
+import BootStrapIcon from '../assets/icons/Bootstrap.png';
+import CSSIcon from '../assets/icons/CSS.png';
+import ExpressIcon from '../assets/icons/Express.png';
+import HTMLIcon from '../assets/icons/HTML.png';
+import NodeIcon from '../assets/icons/Node.png';
+import PostgresSQLIcon from '../assets/icons/PostgresSQL.png';
+import ReactIcon from '../assets/icons/React.png';
+import ReduxIcon from '../assets/icons/Redux.png';
+import SequelizeIcon from '../assets/icons/Sequelize.png';
 import config from '../../config';
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -16,162 +21,227 @@ const IndexPage = () => (
         <p>{config.subHeading}</p>
         <ul className="actions special">
           <li>
-            <Scroll type="id" element="one">
-              <a href="/#" className="button primary">
-                Explore
+            <Scroll type="id" element="about">
+              <a
+                href="#about"
+                className="button primary"
+                style={{ backgroundColor: '#2e3842' }}
+              >
+                About
               </a>
-            </Scroll>
+            </Scroll>{' '}
+            <Scroll type="id" element="skills">
+              <a
+                href="#skills"
+                className="button primary"
+                style={{ backgroundColor: '#2e3842' }}
+              >
+                Skills
+              </a>
+            </Scroll>{' '}
+            <Scroll type="id" element="projects">
+              <a
+                href="#projects"
+                className="button primary"
+                style={{ backgroundColor: '#2e3842' }}
+              >
+                Projects
+              </a>
+            </Scroll>{' '}
           </li>
         </ul>
       </div>
-      <Scroll type="id" element="one">
-        <a href="#one" className="more">
-          Learn More
-        </a>
+      <Scroll type="id" element="about">
+        <a href="#about" className="more"></a>
       </Scroll>
     </section>
 
-    <section id="one" className="wrapper style1 special">
+    <section
+      id="about"
+      className="wrapper style1 special"
+      style={{ backgroundColor: '#fdc6c9' }}
+    >
       <div className="inner">
         <header className="major">
           <h2>
-            Arcu aliquet vel lobortis ata nisl
+            About Me
             <br />
-            eget augue amet aliquet nisl cep donec
           </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
+          <div>
+            <img
+              src={profilePicture}
+              style={{ width: '280px', borderRadius: '50%' }}
+              alt="profile picture"
+            />
+          </div>
+          <br />
+          <p style={{ color: 'white' }}>
+            I am a fullstack software engineer with a passion for continuous
+            learning that loves problem solving and thinking outside of the box.
+            After graduating John Jay College with a Bachelor’s in Computer
+            Science, I wanted to create a Taishanese web application and a
+            mobile application. While learning the various technologies involved
+            and enjoying the process, I realized my passion for fullstack
+            development. This made me want to apply to FullStack Academy, where
+            I learned fullstack development and how to combine theory with real
+            world applications. I am ready for my next step and would love the
+            opportunity to work as a software engineer and be able to combine my
+            love for problem solving with creativity. During my free time,
+            though, I enjoy tinkering with projects, watching documentaries,
+            playing Tetris, and tending my succulents.
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
           </p>
+          <div>
+            <p
+              style={{
+                color: 'white',
+                fontWeight: 'bold',
+                textDecoration: 'underline',
+              }}
+            >
+              Resume
+            </p>
+          </div>
         </header>
-        <ul className="icons major">
-          <li>
-            <span className="icon fa-gem major style1">
-              <span className="label">Lorem</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon fa-heart major style2">
-              <span className="label">Ipsum</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon solid fa-code major style3">
-              <span className="label">Dolor</span>
-            </span>
-          </li>
-        </ul>
       </div>
     </section>
-
-    <section id="two" className="wrapper alt style2">
-      <section className="spotlight">
-        <div className="image">
-          <img src={pic1} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            Magna primis lobortis
-            <br />
-            sed ullamcorper
-          </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
-        </div>
-      </section>
-      <section className="spotlight">
-        <div className="image">
-          <img src={pic2} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            Tortor dolore feugiat
-            <br />
-            elementum magna
-          </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
-        </div>
-      </section>
-      <section className="spotlight">
-        <div className="image">
-          <img src={pic3} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            Augue eleifend aliquet
-            <br />
-            sed condimentum
-          </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
-        </div>
-      </section>
-    </section>
-
-    <section id="three" className="wrapper style3 special">
+    <section
+      id="skills"
+      className="wrapper style1 special"
+      style={{ backgroundColor: '#6f83a4' }}
+    >
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
+          <h2>
+            Skills
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
-          </p>
+          </h2>
+
+          <div
+            style={{
+              color: 'white',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+              paddingLeft: '100px',
+            }}
+          >
+            <li>
+              <span style={{ fontWeight: 'bold', textDecoration: 'underline' }}>
+                Proficient
+              </span>
+              : JavaScript, Node.js, Express, Git, HTML, CSS, React, Redux,
+              React-Redux, Sequelize
+            </li>
+            <li>
+              <span style={{ fontWeight: 'bold', textDecoration: 'underline' }}>
+                {' '}
+                Knowledgeable
+              </span>
+              : PostgresSQL, Ruby, Python, Mocha, Chai, SQL, React Native
+            </li>
+            <li>
+              <span style={{ fontWeight: 'bold', textDecoration: 'underline' }}>
+                {' '}
+                Some Familiarity
+              </span>
+              : C++, Java, Perl, MongoDB, Mongoose, Heroku, jQuery, Solidity
+            </li>
+          </div>
+          <br />
+          <br />
+          <div id="technologies-container">
+            <img
+              className="technology-icon"
+              src={BootStrapIcon}
+              alt="Bootstrap"
+            />
+            <img className="technology-icon" src={CSSIcon} alt="CSS" />
+            <img className="technology-icon" src={ExpressIcon} alt="Express" />
+            <img className="technology-icon" src={HTMLIcon} alt="HTML" />
+            <img className="technology-icon" src={NodeIcon} alt="Node" />
+            <img
+              className="technology-icon"
+              src={PostgresSQLIcon}
+              alt="PostgresSQL"
+            />
+            <img className="technology-icon" src={ReactIcon} alt="React" />
+            <img className="technology-icon" src={ReduxIcon} alt="Redux" />
+            <img
+              className="technology-icon"
+              src={SequelizeIcon}
+              alt="Sequelize"
+            />
+          </div>
+          <br />
+        </header>
+      </div>
+    </section>
+    <section
+      id="projects"
+      className="wrapper style3 special"
+      style={{ backgroundColor: '#bf95b1' }}
+    >
+      <div className="inner">
+        <header className="major">
+          <h2>Projects</h2>
         </header>
         <ul className="features">
-          <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
+          <li className="icon fa-building" style={{ color: '#2e3842' }}>
+            <h3>B.O.S.S.</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              A React Native application that allows users to browse and search
+              for black-owned businesses they can support.
             </p>
+            <a
+              href="https://github.com/hackerDelta/B.O.S.S"
+              className="icon brands fa-github"
+            >
+              <span className="label">Github</span>
+            </a>
           </li>
-          <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
+          <li className="icon solid fa-list" style={{ color: '#2e3842' }}>
+            <h3>Aivirt</h3>
+            <p>A web application that allows users to practice trivia.</p>
+            <a
+              href="https://github.com/ahtae/aivirt"
+              className="icon brands fa-github"
+            >
+              <span className="label">Github</span>
+            </a>
           </li>
-          <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
+          <li
+            className="icon solid fa-calendar-week"
+            style={{ color: '#2e3842' }}
+          >
+            <h3>assemble</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              assemble is a website that allows users to join and create events.
+              It was built using the MERN stack.
             </p>
+            <a
+              href="https://github.com/ahtae/assemble"
+              className="icon brands fa-github"
+            >
+              <span className="label">Github</span>
+            </a>
           </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
+          <li
+            className="icon solid fa-user-friends"
+            style={{ color: '#2e3842' }}
+          >
+            <h3>bluebird</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              bluebird is a social networking website that allows users to make
+              friends and connections. It was built using MERN stack.
             </p>
-          </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
+            <a
+              href="https://github.com/ahtae/bluebird"
+              className="icon brands fa-github"
+            >
+              <span className="label">Github</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -180,24 +250,12 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
+          <h2>Let's chat!</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
+            Thanks for visiting my website! Feel free to connect with me on
+            LinkedIn or send me an e-mail.
           </p>
         </header>
-        <ul className="actions stacked">
-          <li>
-            <a href="/#" className="button fit primary">
-              Activate
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="button fit">
-              Learn More
-            </a>
-          </li>
-        </ul>
       </div>
     </section>
   </Layout>
