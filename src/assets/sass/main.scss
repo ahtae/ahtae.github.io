@@ -1006,7 +1006,7 @@
 
 			&:before {
 				display: block;
-				color: _palette(accent2, bg);
+				color: _palette(accent2, #2e3842);
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
@@ -1820,6 +1820,24 @@
 		}
 	}
 
+	.technology-icon {
+		height: 100px;
+		width: auto;
+		margin-left: 35px;
+		margin-right: 35px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	#technologies-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+
 	body.is-mobile {
 		#main {
 			> header {
@@ -1831,7 +1849,7 @@
 /* Footer */
 
 	#footer {
-		@include padding(6em, 0);
+		@include padding(1em, 0);
 		background-color: darken(_palette(bg), 8);
 		text-align: center;
 
