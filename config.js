@@ -7,7 +7,7 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/images/favicon.png',
-  pathPrefix: `/gatsby-starter-spectral/`,
+  pathPrefix: `/`,
   heading: 'Kristy Li',
   subHeading: 'Fullstack Developer',
   socialLinks: [
