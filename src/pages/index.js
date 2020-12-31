@@ -11,6 +11,11 @@ import PostgresSQLIcon from '../assets/icons/PostgresSQL.png';
 import ReactIcon from '../assets/icons/React.png';
 import ReduxIcon from '../assets/icons/Redux.png';
 import SequelizeIcon from '../assets/icons/Sequelize.png';
+import BOSSProject from '../assets/images/B.O.S.S.jpeg';
+import bluebirdProject from '../assets/images/bluebird.png';
+import PoGoRaidProject from '../assets/images/PoGoRaid.png';
+import pokepediaProject from '../assets/images/pokepedia.png';
+
 import config from '../../config';
 
 const IndexPage = () => (
@@ -76,31 +81,31 @@ const IndexPage = () => (
           </div>
           <br />
           <p style={{ color: 'white' }}>
-            I am a fullstack software engineer with a passion for continuous
-            learning that loves problem solving and thinking outside of the box.
-            After graduating John Jay College with a Bachelor’s in Computer
-            Science, I wanted to create a Taishanese web application and a
-            mobile application. While learning the various technologies involved
-            and enjoying the process, I realized my passion for fullstack
+            I am an ambitious software engineer that believes in continuous
+            learning and loves problem solving, challenges, and thinking outside
+            of the box. After graduating John Jay College with a Bachelor’s in
+            Computer Science, I wanted to create a Taishanese web application
+            and a mobile application. While learning the various technologies
+            involved and enjoying the process, I realized my passion for web
             development. This made me want to apply to FullStack Academy, where
-            I learned fullstack development and how to combine theory with real
-            world applications. I am ready for my next step and would love the
-            opportunity to work as a software engineer and be able to combine my
-            love for problem solving with creativity. During my free time,
-            though, I enjoy tinkering with projects, watching documentaries,
-            playing Tetris, and tending my succulents.
+            I learned various technologies such as React, Redux, Thunk,
+            PostGreSQL, and more. Now, I am ready to start the next chapter of
+            my career as a software engineer. During my free time, though, I
+            enjoy tinkering with projects, watching documentaries, playing
+            Tetris, and tending my succulents.
             <br />
           </p>
           <div>
-            <p
+            <a
+              href="https://drive.google.com/file/d/1LoICpyZHPFVFk-2AbSscEvmC0fbVyfOn/view?usp=sharing"
               style={{
                 color: 'white',
                 fontWeight: 'bold',
                 textDecoration: 'underline',
               }}
             >
-              Resume
-            </p>
+              Click here to view my resume
+            </a>
           </div>
         </header>
       </div>
@@ -139,14 +144,15 @@ const IndexPage = () => (
                 {' '}
                 Knowledgeable
               </span>
-              : PostgresSQL, Ruby, Python, Mocha, Chai, SQL, React Native
+              : PostgreSQL, Ruby, Python, Mocha, Chai, SQL, React Native,
+              MongoDB, Mongoose, Heroku, jQuery
             </li>
             <li>
               <span style={{ fontWeight: 'bold', textDecoration: 'underline' }}>
                 {' '}
                 Some Familiarity
               </span>
-              : C++, Java, Perl, MongoDB, Mongoose, Heroku, jQuery, Solidity
+              : C++, Java, Perl, Solidity
             </li>
           </div>
           <br />
@@ -189,59 +195,142 @@ const IndexPage = () => (
         </header>
         <ul className="features">
           <li className="icon fa-building" style={{ color: '#2e3842' }}>
-            <h3>B.O.S.S.</h3>
-            <p>
-              A React Native application that allows users to browse and search
-              for black-owned businesses they can support.
-            </p>
-            <a
-              href="https://github.com/hackerDelta/B.O.S.S"
-              className="icon brands fa-github"
+            <div
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                overflow: 'hidden',
+              }}
             >
-              <span className="label">Github</span>
-            </a>
+              <h3>B.O.S.S.</h3>
+              <p>
+                A React Native application that allows users to browse and
+                search for black-owned businesses they can support.
+              </p>
+              <img
+                src={BOSSProject}
+                width="200"
+                height="300"
+                style={{ border: '2px solid rgba(144,144,144,0.5)' }}
+              />
+              <br />
+              <a
+                href="https://github.com/ahtae/B.O.S.S"
+                className="icon brands fa-github"
+              >
+                <span className="label">Github</span>
+              </a>
+            </div>
           </li>
           <li className="icon solid fa-list" style={{ color: '#2e3842' }}>
-            <h3>Aivirt</h3>
-            <p>A web application that allows users to practice trivia.</p>
-            <a
-              href="https://github.com/ahtae/aivirt"
-              className="icon brands fa-github"
+            <div
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                overflow: 'hidden',
+              }}
             >
-              <span className="label">Github</span>
-            </a>
+              <h3>PoGo Raid</h3>
+              <p>
+                Pogo Raid is a chat application that allows people in the
+                Pokemon Go community to communicate conveniently. It was built
+                using React, Sequelize, Apollo GraphQL, and PostGreSQL.
+              </p>
+              <img
+                src={PoGoRaidProject}
+                width="300"
+                height="200"
+                style={{ border: '2px solid rgba(144,144,144,0.5)' }}
+              />
+              <br />
+              <a
+                href="https://github.com/ahtae/PoGo-Raid"
+                className="icon brands fa-github"
+              >
+                <span className="label">Github</span>
+              </a>
+            </div>
           </li>
           <li
             className="icon solid fa-calendar-week"
             style={{ color: '#2e3842' }}
           >
-            <h3>assemble</h3>
-            <p>
-              assemble is a website that allows users to join and create events.
-              It was built using the MERN stack.
-            </p>
-            <a
-              href="https://github.com/ahtae/assemble"
-              className="icon brands fa-github"
+            <div
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                overflow: 'hidden',
+              }}
             >
-              <span className="label">Github</span>
-            </a>
+              <h3>pokepedia</h3>
+              <p>
+                pokepedia is a single page application that provides information
+                about various species of Pokémon by using GraphQL Pokémon. It
+                was built using Apollo GraphQL, React, Material UI, and React
+                Bootstrap.
+              </p>
+              <img
+                src={pokepediaProject}
+                width="350"
+                height="200"
+                style={{ border: '2px solid rgba(144,144,144,0.5)' }}
+              />
+              <br />
+              <a
+                href="https://github.com/ahtae/pokepedia"
+                className="icon brands fa-github"
+              >
+                <span className="label">Github</span>
+              </a>
+              <a
+                href="https://github.com/ahtae/pokepedia"
+                className="icon brands fa-heroku"
+              >
+                <span className="label">Heroku</span>
+              </a>
+            </div>
           </li>
+
           <li
             className="icon solid fa-user-friends"
-            style={{ color: '#2e3842' }}
+            style={{
+              color: '#2e3842',
+            }}
           >
-            <h3>bluebird</h3>
-            <p>
-              bluebird is a social networking website that allows users to make
-              friends and connections. It was built using MERN stack.
-            </p>
-            <a
-              href="https://github.com/ahtae/bluebird"
-              className="icon brands fa-github"
+            <div
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                overflow: 'hidden',
+              }}
             >
-              <span className="label">Github</span>
-            </a>
+              <h3>bluebird</h3>
+              <p>
+                bluebird is a social networking website that allows people to
+                meet new people and form connections. It was built using the
+                MERN stack.
+              </p>
+              <img
+                src={bluebirdProject}
+                width="350"
+                height="200"
+                style={{
+                  display: 'inline-block',
+                  border: '2px solid rgba(144,144,144,0.5)',
+                }}
+              />
+              <br />
+              <a
+                href="https://github.com/ahtae/bluebird"
+                className="icon brands fa-github"
+              >
+                <span className="label">Github</span>
+              </a>
+            </div>
           </li>
         </ul>
       </div>
