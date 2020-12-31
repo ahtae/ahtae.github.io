@@ -89,7 +89,7 @@ const IndexPage = () => (
             involved and enjoying the process, I realized my passion for web
             development. This made me want to apply to FullStack Academy, where
             I learned various technologies such as React, Redux, Thunk,
-            PostGreSQL, and more. Now, I am ready to start the next chapter of
+            PostgreSQL, and more. Now, I am ready to start the next chapter of
             my career as a software engineer. During my free time, though, I
             enjoy tinkering with projects, watching documentaries, playing
             Tetris, and tending my succulents.
@@ -236,7 +236,7 @@ const IndexPage = () => (
               <p>
                 Pogo Raid is a chat application that allows people in the
                 Pokemon Go community to communicate conveniently. It was built
-                using React, Sequelize, Apollo GraphQL, and PostGreSQL.
+                using React, Sequelize, Apollo, GraphQL, and PostgreSQL.
               </p>
               <img
                 src={PoGoRaidProject}
@@ -269,7 +269,7 @@ const IndexPage = () => (
               <p>
                 pokepedia is a single page application that provides information
                 about various species of Pokémon by using GraphQL Pokémon. It
-                was built using Apollo GraphQL, React, Material UI, and React
+                was built using Apollo, GraphQL, React, Material UI, and React
                 Bootstrap.
               </p>
               <img
